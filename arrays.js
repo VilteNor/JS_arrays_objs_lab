@@ -10,6 +10,8 @@ stations = ["Dundee", "Edinburgh", "North Berwick", "Newcastle", "York", "Leeds"
  * The East Coast Main Line doesn't stop at Peterborough! Add London Kings Cross to the end of the array to complete the line.
  */
 stations.splice(7,1,"London Kings Cross");
+// alternative solution
+// stations.push("London Kings Cross"); //  pushes last item and adds a new one to the end
 console.log(stations);
 
 /**
@@ -47,6 +49,8 @@ console.log("The third station is " + thirdStation);
  * Q5.
  * Someone put the wrong Berwick on the timetable! Update "North Berwick" to "Berwick-upon-Tweed".
  */
+// // First find the index of "North Berwick"
+// const indexOfNorthBerwick=stations.indexOf("North Berwick");
 stations[1]="Berwick-upon-Tweed";
 console.log(stations);
 
@@ -84,7 +88,7 @@ console.log(stoppingAtDurham);
  * Q9.
  * If we are stopping at Durham, print "Yay Durham!" to the terminal. If not print "Aww...".
  */
-if(stoppingAtDurham){
+if(stoppingAtDurham==true){
     console.log("Yay Durham!");
 } else{
     console.log("Aww...");
